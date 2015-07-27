@@ -8,8 +8,8 @@
             <div class="well">
                 <% if current_user.profile %>
                     <h2 class="text-center">Your Profile</h2>
-                    <%= link_to "Edit your profile", edit_user_profile_path(current_user), class: 'btn btn-default btn-large btn-block' %>
-                    <%= link_to "View your profile", user_path(current_user), class: 'btn btn-default btn-large btn-block' %>
+                    <%= link_to "Edit your profile", edit_user_profile_path(current_user), class: 'btn btn-primary btn-large btn-block' %>
+                    <%= link_to "View your profile", user_path(current_user), class: 'btn btn-success btn-large btn-block' %>
                 <% else %>
                     <p>Create your profile, so you can share your information with the community.</p>
                     <%= link_to "Create your profile!", new_user_profile_path(current_user), class: 'btn btn-default btn-large btn-block' %>
@@ -20,7 +20,7 @@
             <div class="well">
                 <h2 class="text-center">The Community</h2>
                 <p class="text-center">Visit the community to connect with other developers, entrepreneurs, and investors!</p>
-                <%= link_to "Visit the community", users_path, class: 'btn btn-default btn-large btn-block' %>
+                <%= link_to "Visit the community", users_path, class: 'btn btn-info btn-large btn-block' %>
             </div>
         </div>
     <% else %>
